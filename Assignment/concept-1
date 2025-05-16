@@ -1,0 +1,82 @@
+
+
+   **HTTP methods are:**
+
+GET – Retrieve data (e.g., a webpage or an API resource).
+
+POST – Submit data to create a new resource.
+
+PUT – Update or replace a resource entirely.
+
+PATCH – Partially update a resource.
+
+DELETE – Remove a resource.
+
+HEAD – Like GET, but only returns headers (no body).
+
+OPTIONS – Describes the communication options for the target resource.
+
+ **HTTP status codes:**
+
+ 200 OK
+
+201 Created
+
+202 Accepted
+
+204 No content
+
+206 Partial Content
+
+300	Multiple Choices
+
+301	Moved Permanently
+
+303	See Other	Redirect to another resource using GET.
+
+304	Not Modified
+
+307	Temporary Redirect
+
+308	Permanent Redirect
+
+400	Bad Request
+
+401	Unauthorized
+
+403	Forbidden	Access denied even if authenticated.
+
+404	Not Found
+
+405	Method Not Allowed
+
+408	Request Timeout
+
+410	Gone
+
+415	Unsupported Media
+
+429	Too Many Requests	Rate limit exceeded.
+
+500	Internal Server Error
+
+501	Not Implemented
+
+502	Bad Gateway
+
+503	Service Unavailable
+
+504	Gateway Timeout
+
+505	HTTP Version Not Supported 
+
+**Four CSS selectors**
+
+Element Selector
+
+h1 {
+
+  font-size: 30px;
+
+}
+
