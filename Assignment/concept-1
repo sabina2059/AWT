@@ -72,11 +72,105 @@ OPTIONS – Describes the communication options for the target resource.
 
 **Four CSS selectors**
 
-Element Selector
+1.Element Selector
 
+```
 h1 {
-
   font-size: 30px;
+}
+``````
 
+2.Class selector
+```
+.card {
+  border: 1px solid gray;
+}
+```
+3.ID selector
+```
+#main {
+  background-color: lightblue;
+}
+```
+4. Pseudo-class selector
+```
+a:hover {
+  color: red;
+}
+```
+**GIT Basics**
+
+1.git init:-> Initializes a new Git repository in folder.
+ command=git init ( This creates a hidden .git folder and starts tracking changes.)
+  
+  2. git add:-> Adds changes or a specific file.
+      command= git add filename.txt(specific file)/ git add.(for all files)
+  
+  3. git commit:-> Saves the staged changes to the local repository
+      command= git commit -m "Your meaning full message"
+  
+  4. git push:-> Sends local commits to the remote repository(eg. Github).
+      command= git push origin main (using main and master depends on branch)
+
+  5. git pull:-> Fetches changes from the remote repositoty and merges them into  our local branch.
+      command= git pull origin main
+
+  6. git clone:-> copies an entire remote repository to your local machine.
+     command= git clone https://github.com/username/repo-name.git
+
+  7. git branch:-> Used to manage branches (isolated version of project)
+      command= git branch (view all branch)
+               git branch feature-1 (creats a new branch)
+               git checkout feature-1 ( switch to a branch)
+               git checkout -b feature-1 
+
+**Callback and Higher-Order function**
+
+**Callback** – A function passed as an argument into another function to be executed later.
+
+
+```
+function greet(name, callback) {
+  console.log("Hi " + name);
+  callback();
 }
 
+function sayBye() {
+  console.log("Goodbye!");
+}
+
+greet("Lumi", sayBye);
+````
+
+**Higher-Order**- Function that takes another function as an argument or returns a function.
+````
+function multiplyBy(factor) {
+  return function (number) {
+    return number * factor;
+  };
+}
+
+const double = multiplyBy(2);
+console.log(double(5)); // 10
+````
+
+**Array Methods: (filter , map , forEach , push , pop)**
+```
+// forEach
+const result = numbers.forEach((num) => console.log(num + 1));
+
+
+// map
+const squares = numbers.map(num => num * num);
+
+
+// filter 
+const even = numbers.filter(num => num % 4 === 0);
+
+// push
+numbers.push(6); // [1,2,3,4,5,6]
+
+// pop 
+numbers.pop(); // [1,2,3,4,5]
+
+```
